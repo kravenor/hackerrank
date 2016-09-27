@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ProjectEuler;
 
 import java.math.BigInteger;
@@ -10,7 +5,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Simone
+ * @author Simone Baldelli
  */
 public class Multipli3o5 {
     public static void main(String[]args){
