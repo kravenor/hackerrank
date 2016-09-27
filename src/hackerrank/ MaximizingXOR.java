@@ -1,17 +1,9 @@
-package hackerrank;
-
 import java.util.Scanner;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  *
- * @author Simone
+ * @author Simone Baldelli
  */
-public class XOR {
+public class Solution {
 
     static int maxXor(int l, int r) {
         int maxor = 0;
