@@ -4,7 +4,8 @@ import java.util.*;
 
 /**
  *
- * @author Simone
+ * @author Simone Baldelli
+ * @site http;//kravenor.altervista.org
  */
 public class BalancedBrackets {
 
