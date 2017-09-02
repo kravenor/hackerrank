@@ -3,7 +3,7 @@ import java.util.Scanner;
  *
  * @author Simone Baldelli
  */
-public class Solution {
+public class MaximizingXOR {
 
     static int maxXor(int l, int r) {
         int maxor = 0;
