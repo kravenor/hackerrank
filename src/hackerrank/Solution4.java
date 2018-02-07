@@ -13,14 +13,14 @@ import java.util.Scanner;
  * @author Simone
  */
 public class Solution4 {
-  public static void main(String[] args) {
-      Scanner scan=new Scanner(System.in);
-        BigInteger a=scan.nextBigInteger();
-        BigInteger b=scan.nextBigInteger();
-        
-        
-        System.out.println(a+" + "+b+"="+a.add(b));
-        System.out.println(a+" x "+b+"="+a.multiply(b));
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        BigInteger a = scan.nextBigInteger();
+        BigInteger b = scan.nextBigInteger();
+
+        System.out.println(a + " + " + b + "=" + a.add(b));
+        System.out.println(a + " x " + b + "=" + a.multiply(b));
     }
-    
+
 }

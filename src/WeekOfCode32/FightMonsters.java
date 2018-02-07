@@ -19,7 +19,7 @@ public class FightMonsters {
 
     static int getMaxMonsters(int n, int hit, int t, int[] h) {
         int max = 0;
-        int t1=t;
+        int t1 = t;
         Arrays.sort(h);
         for (int i = 0; i < t1; i++) {
             h[i] = h[i] - hit;

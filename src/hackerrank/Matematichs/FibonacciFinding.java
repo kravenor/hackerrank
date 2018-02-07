@@ -12,5 +12,5 @@ package hackerrank.Matematichs;
  * @author Simone
  */
 public class FibonacciFinding {
-    
+
 }

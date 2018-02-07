@@ -29,10 +29,12 @@ public class BalancedBrackets {
                     isbalanced = true;
                     break;
 
-                }else{isbalanced=false;}
+                } else {
+                    isbalanced = false;
+                }
             }
         }
-        return (isbalanced&&stack.empty())?true:false;
+        return (isbalanced && stack.empty()) ? true : false;
     }
 
     public static void main(String[] args) {

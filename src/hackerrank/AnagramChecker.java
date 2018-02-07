@@ -26,8 +26,8 @@ public class AnagramChecker {
     }
 
     public static boolean check(String a, String b) {
-        b=b.toLowerCase();
-        a=a.toLowerCase();
+        b = b.toLowerCase();
+        a = a.toLowerCase();
         HashMap<Character, Integer> mapA = new HashMap<>();
         boolean ana = false;
         for (int i = 0; i < a.length(); i++) {

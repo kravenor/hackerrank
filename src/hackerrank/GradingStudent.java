@@ -9,13 +9,14 @@ import java.util.*;
 
 public class GradingStudent {
 
-    static int[] solve(int[] grades){
-        int []result=new int[grades.length];
-        for(int i=0;i<grades.length;i++){
-            if(grades[i]<38||(grades[i]%5)<3)
-                result[i]=grades[i];
-            else
-                result[i]=grades[i]+5-(grades[i]%5);
+    static int[] solve(int[] grades) {
+        int[] result = new int[grades.length];
+        for (int i = 0; i < grades.length; i++) {
+            if (grades[i] < 38 || (grades[i] % 5) < 3) {
+                result[i] = grades[i];
+            } else {
+                result[i] = grades[i] + 5 - (grades[i] % 5);
+            }
         }
         return result;
     }
@@ -24,7 +25,7 @@ public class GradingStudent {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] grades = new int[n];
-        for(int grades_i=0; grades_i < n; grades_i++){
+        for (int grades_i = 0; grades_i < n; grades_i++) {
             grades[grades_i] = in.nextInt();
         }
         int[] result = solve(grades);
@@ -32,7 +33,6 @@ public class GradingStudent {
             System.out.print(result[i] + (i != result.length - 1 ? "\n" : ""));
         }
         System.out.println("");
-        
 
     }
 }

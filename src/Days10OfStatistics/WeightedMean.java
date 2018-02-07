@@ -27,15 +27,15 @@ public class WeightedMean {
         for (int i = 0; i < N; i++) {
             weight[i] = in.nextInt();
         }
-        int num = 0,den=0;
+        int num = 0, den = 0;
         for (int i = 0; i < N; i++) {
             num += (arr[i] * weight[i]);
         }
         for (int i = 0; i < N; i++) {
-            den+=weight[i];
+            den += weight[i];
         }
-        double mean=(num/(double)den);
+        double mean = (num / (double) den);
         System.out.println(mean);
-        System.out.printf("%.1f%n",mean);
+        System.out.printf("%.1f%n", mean);
     }
 }

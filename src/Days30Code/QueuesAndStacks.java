@@ -15,8 +15,8 @@ import java.util.Stack;
  * @author Simone
  */
 public class QueuesAndStacks {
-    
-public static void main(String[] args) {
+
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
         scan.close();
@@ -35,22 +35,24 @@ public static void main(String[] args) {
 
         // Pop/Dequeue the chars at the head of both data structures and compare them:
         boolean isPalindrome = true;
-        for (int i = 0; i < s.length/2; i++) {
+        for (int i = 0; i < s.length / 2; i++) {
             if (p.popCharacter() != p.dequeueCharacter()) {
-                isPalindrome = false;                
+                isPalindrome = false;
                 break;
             }
         }
 
         //Finally, print whether string s is palindrome or not.
-        System.out.println( "The word, " + input + ", is " 
-                           + ( (!isPalindrome) ? "not a palindrome." : "a palindrome." ) );
+        System.out.println("The word, " + input + ", is "
+                + ((!isPalindrome) ? "not a palindrome." : "a palindrome."));
     }
 }
-class Sol{
-    Stack <Character> stack=new Stack<>();
-    Queue<Character> queue=new LinkedList<>();
-    
+
+class Sol {
+
+    Stack<Character> stack = new Stack<>();
+    Queue<Character> queue = new LinkedList<>();
+
     void pushCharacter(char c) {
         stack.push(c);
     }
@@ -60,12 +62,11 @@ class Sol{
     }
 
     char popCharacter() {
-       return stack.pop();
+        return stack.pop();
     }
 
     char dequeueCharacter() {
         return queue.remove();
     }
-
 
 }

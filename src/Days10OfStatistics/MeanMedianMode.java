@@ -29,8 +29,7 @@ package Days10OfStatistics;
  *
  * 1. Print the mean on a new line, to a scale of decimal place (i.e.,12.3,7.0).
  * 2. Print the median on a new line, to a scale of decimal
- * place(i.e.,12.3,7.0). 
- * 3. Print the mode on a new line; if more than one such
+ * place(i.e.,12.3,7.0). 3. Print the mode on a new line; if more than one such
  * value exists, print the numerically smallest one.
  *
  *
@@ -47,7 +46,6 @@ public class MeanMedianMode {
         Scanner in = new Scanner(System.in);
         int N;
         double mean = 0, median = 0;
-        
 
         N = in.nextInt();
         int[] arr = new int[N];
@@ -62,7 +60,7 @@ public class MeanMedianMode {
         if (N % 2 != 0) {
             median = arr[N / 2 + 1];
         } else {
-            median = (arr[N / 2-1] + arr[N / 2]) / 2f;
+            median = (arr[N / 2 - 1] + arr[N / 2]) / 2f;
         }
         HashMap<Integer, Integer> map = new HashMap<>();
         int maxOccurrences = 0;
@@ -75,29 +73,30 @@ public class MeanMedianMode {
                 mode = num;
             }
         }
-        
-        System.out.printf("%.1f%n",mean);
-        System.out.printf("%.1f%n",median);
+
+        System.out.printf("%.1f%n", mean);
+        System.out.printf("%.1f%n", median);
         System.out.println(mode);
-        
+
     }
 
     private static int getMode(int[] array) {
-        HashMap<Integer,Integer> hm=new HashMap< Integer ,Integer >();
-        int max=1,temp = 0;
-        for(int i=0;i<array.length;i++){
-            if(hm.get(array[i])!=null)
-            {int count=hm.get(array[i]);
-            count=count+1;
-            hm.put(array[i],count);
-            if(count>max)
-                {max=count;
-                 temp=array[i];}
+        HashMap<Integer, Integer> hm = new HashMap< Integer, Integer>();
+        int max = 1, temp = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (hm.get(array[i]) != null) {
+                int count = hm.get(array[i]);
+                count = count + 1;
+                hm.put(array[i], count);
+                if (count > max) {
+                    max = count;
+                    temp = array[i];
+                }
+            } else {
+                hm.put(array[i], 1);
             }
-            else
-            {hm.put(array[i],1);}
         }
-        System.out.println(hm+" \n"+temp);
+        System.out.println(hm + " \n" + temp);
         return temp;
     }
 }

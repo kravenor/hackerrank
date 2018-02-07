@@ -1,5 +1,7 @@
 package hackerrank;
+
 import java.util.Scanner;
+
 /**
  *
  * @author Simone Baldelli
@@ -13,7 +15,7 @@ public class MaximizingXOR {
                 //System.out.println(i + ";" + j + "=" + (i^j));
                 if ((i ^ j) > maxor) {
                     maxor = (i ^ j);
-                    
+
                 }
             }
 

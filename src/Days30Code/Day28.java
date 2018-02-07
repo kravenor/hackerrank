@@ -9,7 +9,9 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 /**
- * Given a string, determine if it's a valid Pattern or not. The string may contain spaces. 
+ * Given a string, determine if it's a valid Pattern or not. The string may
+ * contain spaces.
+ *
  * @author kravenor
  */
 public class Day28 {

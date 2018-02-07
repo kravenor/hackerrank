@@ -1,4 +1,3 @@
-
 package Days30Code;
 
 import java.util.Scanner;
@@ -39,27 +38,28 @@ class Student extends Person {
     }
 
     char calculate() {
-        double avg=0;
-        int value=0;
-        char val='T';
-        for(int i=0;i<testScores.length;i++)
-               avg+=testScores[i];
-        avg=(int)(avg/testScores.length);
-        if(100>=avg&&avg>=90)
-            val='O';
-        else if(90>avg && avg>=80)
-            val='E';
-        else if(80>avg && avg>=70)
-            val='A';
-        else if(70>avg && avg>=55)
-            val='P';
-        else if(55>avg && avg>=40)
-            val='D';
-        else
-            val='T';
-        return val;
+        double avg = 0;
+        int value = 0;
+        char val = 'T';
+        for (int i = 0; i < testScores.length; i++) {
+            avg += testScores[i];
         }
-    
+        avg = (int) (avg / testScores.length);
+        if (100 >= avg && avg >= 90) {
+            val = 'O';
+        } else if (90 > avg && avg >= 80) {
+            val = 'E';
+        } else if (80 > avg && avg >= 70) {
+            val = 'A';
+        } else if (70 > avg && avg >= 55) {
+            val = 'P';
+        } else if (55 > avg && avg >= 40) {
+            val = 'D';
+        } else {
+            val = 'T';
+        }
+        return val;
+    }
 
 }
 

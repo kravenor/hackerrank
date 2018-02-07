@@ -12,18 +12,20 @@ import java.util.Random;
  * @author Simone
  */
 public class Testers {
-    
-    public static int rndInt(int min, int max){
-        Random rand=new Random();
-        return rand.nextInt(max-min+1)+min;
+
+    public static int rndInt(int min, int max) {
+        Random rand = new Random();
+        return rand.nextInt(max - min + 1) + min;
     }
 
-    public static Tree rndTree(int count){
-        if (count==0)
+    public static Tree rndTree(int count) {
+        if (count == 0) {
             return new EmptyBST();
-        else
-            return rndTree(count-1).add(rndInt(0, 50));
+        } else {
+            return rndTree(count - 1).add(rndInt(0, 50));
+        }
     }
+
     public static void checkIsEmpty(Tree t) throws Exception {
         if (t instanceof EmptyBST) {
             if (!t.isEmpty()) {
@@ -43,7 +45,8 @@ public class Testers {
             if (t.member(x)) {
                 throw new Exception("The cardinality increased by 1, but the thing that was added "
                         + "was alredy a member of the tree");
-            } /*else {
+            }
+            /*else {
                 System.out.println("All is good");
             }*/
         } else if (nT == (t.cardinality())) {
