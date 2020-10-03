@@ -23,5 +23,7 @@ Print only first 10 digit of the final sum
 <pre>
 2728190129
 </pre>
-Summing the numbers we get 272819012982030361314614767301043585006837989465343 first 10 digits are 2728190129
+
 ### Explanation
+
+Summing the numbers we get 272819012982030361314614767301043585006837989465343 first 10 digits are 2728190129
