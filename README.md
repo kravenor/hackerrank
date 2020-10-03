@@ -5,7 +5,7 @@ Algorithms, Data Structures, Patterns and other stuff that makes me a better pro
 <ul>
     <li><a href="https://github.com/kravenor/hackerrank/tree/master/Algorithms">Algorithms</a></li>
         <ul>
-            <li><a href="https://github.com/kravenor/hackerrank/tree/master/Algorithms/Apple%20And%20Orange"> Apple And Orange</li>
+            <li><a href="https://github.com/kravenor/hackerrank/tree/master/Algorithms/Implementation/Apple%20And%20Orange"> Apple And Orange</a></li>
             <li>Breaking the records</li>
             <li>Grading Students</li>
         </ul>
@@ -16,5 +16,7 @@ Algorithms, Data Structures, Patterns and other stuff that makes me a better pro
         <li><a href="https://github.com/kravenor/hackerrank/tree/master/Java/Can%20You%20Access">Can You Access? </li>
         <li><a href="https://github.com/kravenor/hackerrank/tree/master/Java/Java%20Prime%20Checker">Java Prime Checker</a>
     </ul>
+    <li>Project Euler</li>
+        
 </ul>
 </p>
