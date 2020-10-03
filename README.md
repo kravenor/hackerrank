@@ -3,6 +3,10 @@ Algorithms, Data Structures, Patterns and other stuff that makes me a better pro
 <p>
   <a href="https://github.com/kravenor/hackerrank/blob/master/src/hackerrank/Primm.java"> Primm</a>
 <ul>
+<li>Alorithms</li>
+    <ul>Apple And Orange</ul>
+    <ul>Breaking the records</ul>
+    <ul>Grading Students</ul>
   <li>Java</li>
   <ul>
   <li><a href="https://github.com/kravenor/hackerrank/tree/master/Java/Java%20Factory%20Pattern">Java Factory Pattern</a></li>
